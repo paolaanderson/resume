@@ -1,0 +1,153 @@
+/* font information */
+
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+
+/*end font information */
+
+body{
+  overflow-x:hidden;
+  font-family: 'Jomolhari', serif;
+  color: #505962;
+  scroll-behavior: smooth;
+  
+}
+
+/* Naviagation */
+
+.navbar {
+  
+  font-weight: 700;
+  font-size: .9rem;
+  
+  background: rgba(0,0,0,0.6) !important;
+}
+
+.navbar-brand img{
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+
+}
+.heading-underline{
+  width: 3rem;
+  height:.2rem;
+  background-color: #F8C76A;
+  margin: 0 auto 2rem;
+
+}
+
+/* start of landing page */
+
+.home-inner{
+  background-image: url(img/deskpic.jpeg);
+}
+.caption{
+ width: 100%;
+ max-width: 100%;
+ position: absolute;
+ top: 70%;
+ }
+ .caption h1 {
+   font-size: 4rem;
+   font-weight: 500;
+   text-shadow: .1rem .1rem  .8rem grey;
+   color: white;
+   padding-bottom: 1rem;
+   
+ }
+ .caption h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: .1rem .1rem  .1rem grey;
+  color: white;
+  
+}
+
+.lead{
+  font-family: 'Jomolhari', serif;
+  text-align: center;
+  padding: 3rem;
+}
+
+/*contact me section */
+h1,h2,h3 {
+	margin:0 0 35px 0;	
+  letter-spacing:1px;
+  font-family: 'Jomolhari', serif;
+  padding:2rem;
+}
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+  line-height:1.6em;
+  font-family: 'Jomolhari', serif;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	background:#333333;
+	color:#f4f4f4;
+	padding-bottom:80px;
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+/*skills */
+.fixed{
+
+  background-image: url(img/skillsimg.jpeg);
+  z-index: -1; 
+}
+
+.feature, h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Jomolhari', serif;
+  color: white;
+}
+
+.dark{
+  background-color: rgba(0,0,0,0.40);
+  padding: 3rem 2rem;
+}
+
+ .skills{
+  color:white;
+}
+ 
+
+
+
+
+
+/* contact */
+
+#contact{
+  padding-top: 20px;
+}
+
+
+/* fixed css */
+
+
+
+
+
+
+
+
