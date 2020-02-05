@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
 
 /*end font information */
+/*
+
+primary-color-light: #C7B86E
+primary-color: #F6DE31
+primary-color-dark: #C3A625
+
+*/
+
 
 body{
   overflow-x:hidden;
@@ -11,14 +19,48 @@ body{
   scroll-behavior: smooth;
   
 }
+.btn-primary {
+  color: #000;
+  background-color: #F6DE31;
+  border-color: #F6DE31;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #C3A625;
+  border-color: #C3A625;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #000;
+  box-shadow: 0 0 0 0.2rem rgba(246,222,49, 0.5);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #000;
+  background-color: #F6DE31;
+  border-color: #F6DE31;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #C3A625;
+  border-color: #C3A625;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  color: #000;
+  box-shadow: 0 0 0 0.2rem rgba(246,222,49, 0.5);
+}
 
+hr {
+ width: 50%;
+}
 /* Naviagation */
-
+.section {
+  padding: 30px 0px;
+}
 .navbar {
   
   font-weight: 700;
   font-size: .9rem;
-  
   background: rgba(0,0,0,0.6) !important;
 }
 
@@ -34,18 +76,42 @@ body{
   color: white;
 
 }
+.nav-link.active{    
+  border-color: #F6DE31;
+  border-style: solid;
+  border-width: 0px 0px 3px 0px;
+}
 .heading-underline{
-  width: 3rem;
-  height:.2rem;
+  width: 7rem;
+  height: .2rem;
   background-color: #F8C76A;
   margin: 0 auto 2rem;
-
 }
 
 /* start of landing page */
+#landing h2 {
+  margin: 10px 0px;
+  text-transform: uppercase;
+  padding: 4px;
+}
 
-.home-inner{
-  background-image: url(img/deskpic.jpeg);
+.landing-section{
+  padding: 150px 0px 100px 0px;
+}
+.landing-card {
+  background-color: #f4f4f4e6;
+  opacity: 70;
+}
+.anchor-line{
+  border-color: #F6DE31;
+  border-style: solid;
+  border-width: 0px 0px 0px 3px;
+  padding: 10px;
+}
+
+.landing-bg-img{
+  background-image: url(img/landingimg.jpeg);
+  opacity: 50%;
 }
 .caption{
  width: 100%;
@@ -65,8 +131,7 @@ body{
   font-size: 2rem;
   font-weight: 300;
   text-shadow: .1rem .1rem  .1rem grey;
-  color: white;
-  
+  color: white; 
 }
 
 .lead{
@@ -75,9 +140,12 @@ body{
   padding: 3rem;
 }
 
+.img-thumbnail{
+  max-width: 300px;
+}
 /*contact me section */
 h1,h2,h3 {
-	margin:0 0 35px 0;	
+	margin:0 0 0px 0;	
   letter-spacing:1px;
   font-family: 'Jomolhari', serif;
   padding:2rem;
@@ -100,7 +168,6 @@ a:hover,a:focus{
 #contact{
 	background:#333333;
 	color:#f4f4f4;
-	padding-bottom:80px;
 }
 
 textarea.form-control{
@@ -108,17 +175,16 @@ textarea.form-control{
 }
 
 /*skills */
-.fixed{
-
-  background-image: url(img/skillsimg.jpeg);
+.skills-bg-img{
+  background-image: url(img/deskpic.jpeg);
   z-index: -1; 
 }
 
-.feature, h4{
+ .feature, h4 {
   font-size: 1.3rem;
   text-transform: uppercase;
   font-family: 'Jomolhari', serif;
-  color: white;
+  /*color: white;*/
 }
 
 .dark{
@@ -126,7 +192,7 @@ textarea.form-control{
   padding: 3rem 2rem;
 }
 
- .skills{
+ #skills{
   color:white;
 }
  
@@ -136,10 +202,9 @@ textarea.form-control{
 
 
 /* contact */
-
-#contact{
+/* #contact{
   padding-top: 20px;
-}
+} */
 
 
 /* fixed css */
